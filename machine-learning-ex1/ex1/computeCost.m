@@ -18,4 +18,6 @@ J = 0;
 % size(y)
 % X*theta-y
 
-J = 1/(2*m) * sum( (X*theta-y).^2 )
+J = 1/(2*m) * sum( (X*theta-y).^2 );
+
+end

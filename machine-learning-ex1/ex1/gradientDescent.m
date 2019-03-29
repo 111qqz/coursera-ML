@@ -22,8 +22,8 @@ for iter = 1:num_iters
     % size(X)
     % sprintf("delta:",delta)
     delta = (X*theta-y)'*X;
-    delta = delta'/m
-    theta = theta - alpha * delta
+    delta = delta'/m;
+    theta = theta - alpha * delta;
 
 
     % ============================================================
