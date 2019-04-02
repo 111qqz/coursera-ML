@@ -43,7 +43,7 @@ sel = sel(1:100);
 displayData(X(sel, :));
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
+% pause;
 
 %% ================ Part 2: Loading Pameters ================
 % In this part of the exercise, we load some pre-initialized 
