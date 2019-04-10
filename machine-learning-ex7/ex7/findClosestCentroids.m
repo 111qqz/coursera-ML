@@ -24,7 +24,7 @@ idx = zeros(size(X,1), 1);
 size(X);
 size(centroids);
 for i = 1:size(X,1)
-    minDis = 99999;
+    minDis = 999999;
     ans = -1;
     for j = 1:K
         dist = (X(i,:)-centroids(j,:))*(X(i,:)-centroids(j,:))';

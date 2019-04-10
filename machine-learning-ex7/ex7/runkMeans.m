@@ -42,13 +42,14 @@ for i=1:max_iters
     
     % For each example in X, assign it to the closest centroid
     idx = findClosestCentroids(X, centroids);
+    % fprintf('K-Means after findClosetCent %d/%d...\n', i, max_iters);
     
     % Optionally, plot progress here
     if plot_progress
         plotProgresskMeans(X, centroids, previous_centroids, idx, K, i);
         previous_centroids = centroids;
         fprintf('Press enter to continue.\n');
-        pause;
+        % pause;
     end
     
     % Given the memberships, compute new centroids
